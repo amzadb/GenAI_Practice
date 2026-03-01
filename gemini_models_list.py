@@ -1,7 +1,11 @@
 from dotenv import load_dotenv
 load_dotenv()
 
-from google.generativeai import list_models
+from google import genai
 
-for model in list_models():
-    print(model)
+client = genai.Client()
+for model in client.models.list():
+    # print(model)
+    print("Model Name:", model.name)
+    print("Display Name:", model.display_name)
+    print("-------------------------------")
