@@ -1,3 +1,7 @@
+# OpenAI Quickstart: Simple example of using OpenAI API
+# This script demonstrates basic text generation using GPT model
+# Requirements: OPENAI_API_KEY environment variable set
+
 from dotenv import load_dotenv
 load_dotenv()
 

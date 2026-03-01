@@ -1,3 +1,7 @@
+# Google Gemini Quickstart: Simple example of using Google Gemini API
+# This script demonstrates content generation using Gemini Flash model
+# Requirements: GOOGLE_API_KEY environment variable set
+
 from dotenv import load_dotenv
 load_dotenv()
 

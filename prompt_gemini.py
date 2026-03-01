@@ -1,3 +1,4 @@
+# Using LangChain Google Generative AI wrapper
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain

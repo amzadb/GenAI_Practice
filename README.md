@@ -1,18 +1,27 @@
 # GenAI Practice Workspace
 
-This repository contains quickstart scripts and prompt examples for working with popular Generative AI APIs, including OpenAI, Gemini, and Anthropic. It is designed to help you get started quickly with text and image generation, model exploration, and prompt engineering.
+This repository contains quickstart scripts, prompt examples, and interactive Streamlit applications for working with popular Generative AI APIs, including OpenAI, Gemini, and Anthropic. It demonstrates both native SDK usage and LangChain integration patterns for text generation, model exploration, and prompt engineering.
 
 ## Contents
 
+### Streamlit Applications (Interactive)
+- `ai_doubt_solver_client.py` — Multi-provider doubt solver using native SDKs
+- `ai_doubt_solver_chat.py` — Multi-provider doubt solver using LangChain wrappers
+
+### Quickstart Scripts
 - `openai_quickstart.py` — Quickstart for OpenAI API (text generation)
 - `openai_image_analyzer.py` — OpenAI image analysis example
 - `openai_models_list.py` — Lists available OpenAI models
-- `prompt_openai.py` — Prompt engineering examples for OpenAI
-- `gemini_quickstart.py` — Quickstart for Gemini API
+- `gemini_quickstart.py` — Quickstart for Google Gemini API
 - `gemini_models_list.py` — Lists available Gemini models
-- `prompt_gemini.py` — Prompt engineering examples for Gemini
-- `anthropic_quickstart.py` — Quickstart for Anthropic API
-- `prompt_anthropic.py` — Prompt engineering examples for Anthropic
+- `anthropic_quickstart.py` — Quickstart for Anthropic Claude API
+
+### Prompt Engineering Examples
+- `prompt_openai.py` — LangChain-based prompt examples for OpenAI
+- `prompt_gemini.py` — LangChain-based prompt examples for Gemini
+- `prompt_anthropic.py` — LangChain-based prompt examples for Anthropic
+
+### Configuration
 - `requirements.txt` — Python dependencies
 
 ## Setup
@@ -59,9 +68,33 @@ This repository contains quickstart scripts and prompt examples for working with
 
 ## Usage
 
-Run any script using Python:
+### Running Quickstart Scripts
+Run any quickstart script using Python:
 ```sh
 python openai_quickstart.py
+```
+
+### Running Interactive Streamlit Applications
+To run the interactive AI doubt solver applications:
+```sh
+streamlit run ai_doubt_solver_client.py
+```
+or
+```sh
+streamlit run ai_doubt_solver_chat.py
+```
+
+The applications allow you to:
+- Switch between OpenAI (GPT-4o-mini), Google Gemini (Flash), and Anthropic Claude
+- Ask questions or topics for detailed explanations
+- Receive real-life examples and quiz questions
+
+### Running Prompt Engineering Examples
+Run the prompt examples with:
+```sh
+python prompt_openai.py
+python prompt_gemini.py
+python prompt_anthropic.py
 ```
 
 Modify the scripts to experiment with different prompts, models, and API features.

@@ -1,3 +1,4 @@
+# Using LangChain OpenAI wrapper
 from langchain_openai import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain

@@ -1,8 +1,9 @@
-langchain 
-langchain_openai
-langchain-google-genai
-langchain-anthropic
-python-dotenv
-openai
-google-generativeai
-anthropic
+streamlit>=1.28.0
+langchain>=0.1.0
+langchain-openai>=0.0.7
+langchain-google-genai>=0.0.7
+langchain-anthropic>=0.1.0
+python-dotenv>=1.0.0
+openai>=1.3.0
+google-generativeai>=0.3.0
+anthropic>=0.7.0
